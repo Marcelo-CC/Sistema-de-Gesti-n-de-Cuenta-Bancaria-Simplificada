@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Animación utilitaria propia: genera la clase `animate-destello` */
+@theme {
+  --animate-destello: destello 0.9s ease-out;
+
+  @keyframes destello {
+    0% { transform: scale(1); }
+    35% { transform: scale(1.06); color: var(--color-emerald-200); }
+    100% { transform: scale(1); }
+  }
+}
